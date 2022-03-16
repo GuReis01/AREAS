@@ -1,0 +1,89 @@
+<html>
+    <link rel="stylesheet" href="styleretangulo.css"/>
+    <head>
+        <title>ÁREAS</title>
+    </head>
+    <body>
+        <div class="botoes">
+        <button class="botao" onclick="losango()"> Área do losango </button>
+        <button class="botao" onclick="paralelogramo()"> Área do paralelogramo</button>
+        <button class="botao" onclick="quadrado()">Área do quadrado</button>
+        <button class="botao" onclick="retangulo()">Área do retangulo</button>
+        <button class="botao" onclick="trapezio()">Área do trapezio</button>
+        <button class="botao" onclick="triangulo()">Área do triangulo</button>
+    
+    
+    
+    </div>
+
+        <script class="funcao">
+
+            function losango() {
+            var diagonalmaior = prompt("Digite o tamanho da diagonal maior em cm")
+            var diagonalmenor = prompt("Digite o tamanho da diagonal menor em cm")
+            
+            resultado = ((diagonalmaior * diagonalmenor) / (2))
+
+            alert("A área do seu losango é = " + resultado + "cm")}
+
+            function paralelogramo(){
+                var base = prompt("Digite o tamanho da base em cm");
+                var altura = prompt("Digite o tamanho da altura em cm");
+
+                resultado= (base * altura);
+
+                alert("A área do seu paralelogramo é = " + resultado + "cm")}
+
+            function quadrado() {
+                var lado1 = prompt("Digite o tamanho do lado 1 em cm");
+            var lado2 = prompt("Digite o tamanho do lado 2 em cm")
+
+            resultado = (lado1 * lado2)
+             
+            alert("A área do seu quadrado é = " + resultado + "cm")
+            }
+
+            function retangulo() {
+                var base = prompt("Digite o tamanho da base em cm");
+
+            var altura = prompt("Digite o tamanho da altura em cm");
+
+            var resultado = (base * altura)
+            alert("A área do retangulo é = " + resultado + "cm");}
+
+            function trapezio() {
+                var basemaior = prompt("Digite o tamanho da base maior em cm");
+                var basemenor = prompt("Digite o tamanho da base menor em cm");
+                var altura = prompt("Digite o tamanho da altura do trapezio em cm");
+
+                resultado= ((basemaior + basemenor) * (altura) / (2));
+
+                alert("A área do seu trapézio é = " + resultado + "cm");}
+
+                function triangulo() {
+                    var base = prompt("Digite aqui o tamanho da base em cm");
+                var altura = prompt("Digite aqui o tamanho da altura em cm");
+
+                resultado = ((base * altura)/ (2))
+                alert("A área do seu triangulo é = " + resultado + "cm");}
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+</html>
